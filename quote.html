@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Quick Quote | Kuhlula Legacy">
+    <meta property="og:description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-all-bg.jpeg">
+    <meta property="og:site_name" content="Kuhlula Legacy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quick Quote | Kuhlula Legacy">
+    <meta name="twitter:description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta name="twitter:image" content="assets/images/hero-all-bg.jpeg">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="assets/images/logo-bg.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/images/logo-bg.jpeg">
+    <title>Quick Quote | Kuhlula Legacy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="navigation.js"></script>
+</head>
+<body>
+    <div class="loader" id="loader"><div class="loader-inner"><span class="loader-logo"></span><div class="spinner"></div></div></div>
+    <header class="header" id="header">
+        <script>document.write(NavigationComponent.render('quote'));</script>
+    </header>
+
+    <main id="content">
+        <section class="page-header page-header-lite quote-header">
+            <div class="page-header-bg quote-bg"></div>
+            <div class="page-header-overlay"></div>
+            <div class="page-header-content container">
+                <h1>Quick <span>Quote</span></h1>
+                <p>Tell us what you need and we’ll deliver a fast, tailored logistics proposal.</p>
+            </div>
+        </section>
+
+        <section class="section section-light quote-page">
+            <div class="container split-grid fade-up">
+                <div>
+                    <span class="eyebrow">Quick Quote</span>
+                    <h2>Fast, simple and action-ready.</h2>
+                    <p>Complete the form or contact us directly on WhatsApp for urgent logistics and equipment pricing.</p>
+                    <div class="quote-summary">
+                        <div><strong>Service</strong><span>Freight, Plant Hire, Warehousing, Supply Chain</span></div>
+                        <div><strong>Timeline</strong><span>Standard and expedited options available</span></div>
+                        <div><strong>Support</strong><span>24/7 urgent logistics assistance</span></div>
+                    </div>
+                    <a href="https://wa.me/27813407183?text=Hello%20Kuhlula%20Legacy%2C%20I%20need%20a%20quote." class="btn btn-primary" target="_blank" rel="noreferrer">Request via WhatsApp</a>
+                </div>
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-row"><input type="text" name="name" placeholder="Name *" required></div>
+                    <div class="form-row"><input type="text" name="company" placeholder="Company"></div>
+                    <div class="form-row"><input type="email" name="email" placeholder="Email *" required></div>
+                    <div class="form-row"><input type="tel" name="phone" placeholder="Phone *" required></div>
+                    <div class="form-row"><select name="service" required><option value="">Select Service</option><option value="freight">Freight & Logistics</option><option value="plant-hire">Plant Hire</option><option value="warehousing">Warehousing</option><option value="supply-chain">Supply Chain</option><option value="cross-border">Cross-Border Logistics</option><option value="fleet-leasing">Fleet Leasing</option></select></div>
+                    <div class="form-row"><select name="timeline" required><option value="">Estimated Delivery Timeline</option><option value="standard">Standard (5-7 days)</option><option value="express">Express (2-3 days)</option><option value="urgent">Urgent (24 hours)</option></select></div>
+                    <div class="form-row"><textarea name="message" placeholder="Project details *" required></textarea></div>
+                    <button type="submit" class="btn btn-secondary">Submit Quote Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Kuhlula <span>Legacy</span></h3>
+                <p>Moving South Africa with integrated logistics, plant hire and supply chain services.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><i data-lucide="map-pin"></i> Kempton Park, Gauteng</p>
+                <p><i data-lucide="phone"></i> +27 (81) 340 7183</p>
+                <p><i data-lucide="mail"></i> info@kuhlulalegacy.co.za</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Kuhlula Legacy. All Rights Reserved. | CIPC Registered | 100% Black Owned</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
