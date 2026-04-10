@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const subject = `Kuhlula Legacy Quote Request - ${name}${company ? ' from ' + company : ''}`;
             const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company || 'Not provided'}%0D%0AService: ${service || 'Not specified'}%0D%0AMessage: ${message}`;
-            window.location.href = `mailto:info@kuhlulalegacy.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+            window.location.href = `mailto:info.kuhlulalegacy@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
         });
     }
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const subject = `Kuhlula Legacy Quote Request - ${name}${company ? ' from ' + company : ''}`;
             const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0ACompany: ${company || 'Not provided'}%0D%0AService: ${service || 'Not specified'}%0D%0ATimeline: ${timeline || 'Not specified'}%0D%0AProject Details: ${message}`;
-            window.location.href = `mailto:info@kuhlulalegacy.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+            window.location.href = `mailto:info.kuhlulalegacy@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
         });
     }
 });
