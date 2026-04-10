@@ -59,8 +59,23 @@ document.addEventListener('DOMContentLoaded', function() {
     if (quoteForm) {
         quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you. Your quote request has been submitted.');
-            this.reset();
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const company = formData.get('company');
+            const service = formData.get('service');
+            const timeline = formData.get('timeline');
+            const message = formData.get('message');
+
+            if (!name || !email || !phone || !message) {
+                alert('Please fill in the required fields.');
+                return;
+            }
+
+            const subject = `Kuhlula Legacy Quote Request - ${name}${company ? ' from ' + company : ''}`;
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0ACompany: ${company || 'Not provided'}%0D%0AService: ${service || 'Not specified'}%0D%0ATimeline: ${timeline || 'Not specified'}%0D%0AProject Details: ${message}`;
+            window.location.href = `mailto:info@kuhlulalegacy.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
         });
     }
 });
