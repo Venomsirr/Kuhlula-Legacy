@@ -7,10 +7,10 @@ const NavigationComponent = {
         const navLinks = [
             { href: 'index.html', label: 'Home', page: 'home' },
             { href: 'about.html', label: 'About', page: 'about' },
-            { href: 'services.html', label: 'Services', page: 'services' },
-            { href: 'fleet.html', label: 'Fleet', page: 'fleet' },
-            { href: 'gallery.html', label: 'Gallery', page: 'gallery' },
-            { href: 'contact.html', label: 'Contact', page: 'contact' }
+            { href: 'team.html', label: 'Team', page: 'team' },
+            { href: 'services.html', label: 'Business Lines', page: 'business-lines' },
+            { href: 'fleet.html', label: 'Career', page: 'career' },
+            { href: 'gallery.html', label: 'Insights', page: 'insights' }
         ];
 
         const isActive = page => page === currentPage ? 'active' : '';
@@ -31,7 +31,8 @@ const NavigationComponent = {
                         ${navLinks.map(link => `
                             <li><a href="${link.href}" class="nav-link ${isActive(link.page)}">${link.label}</a></li>
                         `).join('')}
-                        <li><a href="quote.html" class="nav-quote btn btn-nav">Get Quote</a></li>
+                        <li><a href="contact.html" class="nav-quote btn btn-nav">Contact</a></li>
+                        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
                     </ul>
                 </div>
             </nav>
@@ -70,6 +71,21 @@ const NavigationComponent = {
                 link.classList.remove('active');
             }
         });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            document.body.classList.toggle('light-mode', currentTheme === 'light');
+            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+            themeToggle.addEventListener('click', () => {
+                const isLight = document.body.classList.toggle('light-mode');
+                const newTheme = isLight ? 'light' : 'dark';
+                localStorage.setItem('theme', newTheme);
+                themeToggle.textContent = isLight ? '☀️' : '🌙';
+            });
+        }
     }
 };
 
