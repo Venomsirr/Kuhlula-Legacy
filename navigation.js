@@ -19,7 +19,7 @@ const NavigationComponent = {
             <nav class="nav-wrapper" role="navigation" aria-label="Main navigation">
                 <div class="nav-container container">
                     <a class="brand" href="index.html">
-                        <span class="brand-mark" aria-hidden="true">K</span>
+                        <img src="assets/images/logo-bg.jpeg" alt="Kuhlula Legacy logo" class="brand-logo">
                         <span class="brand-name">Kuhlula Legacy</span>
                     </a>
                     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -32,7 +32,7 @@ const NavigationComponent = {
                             <li><a href="${link.href}" class="nav-link ${isActive(link.page)}">${link.label}</a></li>
                         `).join('')}
                         <li><a href="contact.html" class="nav-quote btn btn-nav">Contact</a></li>
-                        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+                        <li><button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">Light</button></li>
                     </ul>
                 </div>
             </nav>
@@ -72,23 +72,15 @@ const NavigationComponent = {
             }
         });
 
-        // Theme toggle
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            const currentTheme = localStorage.getItem('theme') || 'dark';
-            document.body.classList.toggle('light-mode', currentTheme === 'light');
-            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
-
-            themeToggle.addEventListener('click', () => {
-                const isLight = document.body.classList.toggle('light-mode');
-                const newTheme = isLight ? 'light' : 'dark';
-                localStorage.setItem('theme', newTheme);
-                themeToggle.textContent = isLight ? '☀️' : '🌙';
-            });
-        }
     }
 };
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = NavigationComponent;
 }
+
+// Initialize navigation component when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    NavigationComponent.init();
+});
+
