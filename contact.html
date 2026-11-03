@@ -11,27 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
                 <img src="assets/images/logo-bg.jpeg" alt="Kuhlula Legacy logo" class="site-logo">
-                <h1>Kuhlula Legacy</h1>
+                <span class="logo-name">Kuhlula Legacy</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="business-lines.html">Business Lines</a></li>
-                <li><a href="insights.html">Insights</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle theme">Light</button>
             <a href="contact.html" class="quote-btn">Contact Us</a>
-            <div class="hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
@@ -41,18 +42,19 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="business-lines.html">Business Lines</a></li>
-            <li><a href="insights.html">Insights</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <main id="content">
+    <section class="page-header" id="main-content">
         <!-- Decorative hero SVGs removed for clearer background image -->
         
         <div class="page-header-content" style="position: relative; z-index: 1;">
-            <h1>Let's Build Something Extraordinary</h1>
-            <p>Connect with our team to discuss your infrastructure vision and discover how we can deliver excellence</p>
+            <h1>Contact Kuhlula Legacy</h1>
+            <p>Tell us about your freight, supply, shuttle, plant hire or construction requirements.</p>
         </div>
     </section>
 
@@ -74,21 +76,13 @@
                         </div>
                         <div class="detail-item">
                             <h4>Email</h4>
-                            <p><a href="mailto:info@kuhlulalegacy.co.za">info@kuhlulalegacy.co.za</a></p>
+                            <p><a href="mailto:info.kuhlulalegacy@gmail.com">info.kuhlulalegacy@gmail.com</a></p>
                         </div>
                         <div class="detail-item">
                             <h4>Business Hours</h4>
                             <p>Monday - Friday: 7:00 AM - 5:00 PM<br>
                             Saturday: 8:00 AM - 1:00 PM<br>
-                            Emergency Support: 24/7</p>
-                        </div>
-                    </div>
-                    <div class="social-links-section">
-                        <h4>Follow Us</h4>
-                        <div class="social-links-large">
-                            <a href="#" title="LinkedIn">LinkedIn</a>
-                            <a href="#" title="Facebook">Facebook</a>
-                            <a href="#" title="Twitter">Twitter</a>
+                            Sunday: Closed</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +90,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-box">
                     <h2>Send us a Message</h2>
-                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="contact-name">Full Name *</label>
                             <input type="text" id="contact-name" name="name" required>
@@ -118,6 +112,7 @@
                             <textarea id="contact-message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">Submitting opens your email app so you can send this enquiry to our team.</p>
                     </form>
                 </div>
             </div>
@@ -129,10 +124,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>Request a Quote</h2>
-                <p>Get a customized quote for your specific infrastructure needs</p>
+                <p>Tell us which service you need and share the relevant project details.</p>
             </div>
             <div class="quote-form-wrapper">
-                <form id="quoteRequestForm" onsubmit="handleQuoteRequest(event)">
+                <form id="quoteRequestForm">
                     <div class="form-row">
                         <div class="form-group half">
                             <label for="quote-name">Full Name *</label>
@@ -157,9 +152,11 @@
                         <label for="quote-service">Primary Service Interest *</label>
                         <select id="quote-service" name="service" required>
                             <option value="">Select a service</option>
-                            <option value="logistics">Logistics & Freight Transportation</option>
-                            <option value="maintenance">Residential & Commercial Maintenance</option>
-                            <option value="construction">Construction & Infrastructure Development</option>
+                            <option value="road-freight">Road Freight Transportation</option>
+                            <option value="general-goods">Supply and Delivery of General Goods, Detergents, Fuels, Oil and Gas</option>
+                            <option value="shuttle">Airport, Hotel and Staff Shuttle Services</option>
+                            <option value="plant-hire">Plant Hire</option>
+                            <option value="construction">Construction Projects</option>
                             <option value="multiple">Multiple Services</option>
                             <option value="other">Other</option>
                         </select>
@@ -193,6 +190,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-large">Request Quote</button>
+                    <p class="form-note">Submitting opens your email app so you can send this enquiry to our team.</p>
                 </form>
             </div>
         </div>
@@ -211,23 +209,23 @@
                 </div>
                 <div class="faq-item">
                     <h4>Do you operate outside South Africa?</h4>
-                    <p>Yes! We operate across South Africa and are expanding into SADC countries including Mozambique, Botswana, and Namibia. Contact us to discuss cross-border requirements.</p>
+                    <p>Our team is based in Kempton Park, Gauteng. Contact us with your project location and requirements.</p>
                 </div>
                 <div class="faq-item">
                     <h4>Are your services OHS compliant?</h4>
-                    <p>Absolutely. All our operations meet strict occupational health and safety standards. Compliance is non-negotiable across all our services.</p>
+                    <p>Safety is considered when planning transport, equipment hire and project requirements. Contact us to discuss the requirements for your work.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Can you handle urgent logistics requests?</h4>
-                    <p>Yes, we have 24/7 emergency logistics support. Call our emergency hotline for immediate assistance with urgent transport needs.</p>
+                    <h4>How can I discuss an urgent requirement?</h4>
+                    <p>Call +27 (0)81 340 7183 during business hours to discuss availability and timing.</p>
                 </div>
                 <div class="faq-item">
                     <h4>What makes Kuhlula Legacy different?</h4>
-                    <p>Our integrated approach means you get logistics, maintenance, and construction expertise under one roof—reducing complexity and improving coordination for your projects.</p>
+                    <p>Our services span road freight, goods supply and delivery, shuttle transport, plant hire and construction projects, helping simplify coordination for your requirements.</p>
                 </div>
                 <div class="faq-item">
                     <h4>Do you offer long-term contracts?</h4>
-                    <p>Yes, we specialize in long-term service contracts. We can customize arrangements for logistics, maintenance, and construction projects of any duration.</p>
+                    <p>Yes. We can discuss service arrangements for road freight, goods supply, shuttle services, plant hire and construction projects based on your requirements.</p>
                 </div>
             </div>
         </div>
@@ -242,18 +240,15 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
                     <h4>Kuhlula Legacy</h4>
-                    <p>Integrated infrastructure solutions provider delivering reliable, scalable, and compliant services across South Africa and the SADC region.</p>
-                    <div class="social-links">
-                        <a href="#" title="LinkedIn">in</a>
-                        <a href="#" title="Facebook">f</a>
-                        <a href="#" title="Twitter">X</a>
-                    </div>
+                    <p>Road freight, goods supply, shuttle services, plant hire and construction projects.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -266,64 +261,17 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><strong>Email:</strong> info@kuhlulalegacy.co.za</p>
+                    <p><strong>Email:</strong> <a href="mailto:info.kuhlulalegacy@gmail.com">info.kuhlulalegacy@gmail.com</a></p>
                     <p><strong>Phone:</strong> +27 (0)81 340 7183</p>
                     <p><strong>Location:</strong> Kempton Park, Gauteng</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Certifications</h4>
-                    <ul>
-                        <li>100% Black-Owned Enterprise</li>
-                        <li>OHS Compliant</li>
-                        <li>B-BBEE Accredited</li>
-                    </ul>
-                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kuhlula Legacy. All Rights Reserved.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2026 Kuhlula Legacy. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Quote Modal -->
-    <div id="quoteModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeQuoteModal()">&times;</span>
-            <h2>Quick Quote Request</h2>
-            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Service Interest *</label>
-                    <select id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="logistics">Logistics & Freight</option>
-                        <option value="maintenance">Maintenance Services</option>
-                        <option value="construction">Construction & Infrastructure</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Quote Request</button>
-            </form>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
-

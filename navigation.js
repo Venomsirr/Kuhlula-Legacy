@@ -7,10 +7,8 @@ const NavigationComponent = {
         const navLinks = [
             { href: 'index.html', label: 'Home', page: 'home' },
             { href: 'about.html', label: 'About', page: 'about' },
-            { href: 'team.html', label: 'Team', page: 'team' },
-            { href: 'services.html', label: 'Business Lines', page: 'business-lines' },
-            { href: 'fleet.html', label: 'Career', page: 'career' },
-            { href: 'gallery.html', label: 'Insights', page: 'insights' }
+            { href: 'business-lines.html', label: 'Business Lines', page: 'business-lines' },
+            { href: 'careers.html', label: 'Careers', page: 'careers' }
         ];
 
         const isActive = page => page === currentPage ? 'active' : '';
@@ -22,7 +20,7 @@ const NavigationComponent = {
                         <img src="assets/images/logo-bg.jpeg" alt="Kuhlula Legacy logo" class="brand-logo">
                         <span class="brand-name">Kuhlula Legacy</span>
                     </a>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -48,6 +46,7 @@ const NavigationComponent = {
                 const expanded = navMenu.classList.toggle('active');
                 menuToggle.classList.toggle('active');
                 menuToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                menuToggle.setAttribute('aria-label', expanded ? 'Close navigation menu' : 'Open navigation menu');
                 document.body.style.overflow = expanded ? 'hidden' : '';
             });
 
@@ -56,12 +55,25 @@ const NavigationComponent = {
                     navMenu.classList.remove('active');
                     menuToggle.classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
                     document.body.style.overflow = '';
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                    document.body.style.overflow = '';
+                    menuToggle.focus();
                 }
             });
         }
 
-        const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+        const pageName = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+        const currentPage = pageName === 'services' ? 'business-lines' : pageName;
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             const href = link.getAttribute('href').replace('.html', '');
@@ -83,4 +95,3 @@ if (typeof module !== 'undefined' && module.exports) {
 document.addEventListener('DOMContentLoaded', () => {
     NavigationComponent.init();
 });
-

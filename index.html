@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kuhlula Legacy - 100% Black-owned integrated infrastructure solutions. Logistics, maintenance, and construction across South Africa and SADC.">
-    <meta name="keywords" content="logistics, freight, construction, maintenance, South Africa, SADC, infrastructure">
-    <title>Kuhlula Legacy - Integrated Infrastructure Solutions</title>
+    <meta name="description" content="Kuhlula Legacy provides road freight, goods supply and delivery, shuttle services, plant hire and construction projects across South Africa.">
+    <meta name="keywords" content="road freight, goods supply, shuttle services, plant hire, construction, South Africa">
+    <title>Kuhlula Legacy | Transport, Supply & Projects</title>
     <script>(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,27 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
                 <img src="assets/images/logo-bg.jpeg" alt="Kuhlula Legacy logo" class="site-logo">
-                <h1>Kuhlula Legacy</h1>
+                <span class="logo-name">Kuhlula Legacy</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="business-lines.html">Business Lines</a></li>
-                <li><a href="insights.html">Insights</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle theme">Light</button>
             <a href="contact.html" class="quote-btn">Contact Us</a>
-            <div class="hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
@@ -43,20 +44,21 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="business-lines.html">Business Lines</a></li>
-            <li><a href="insights.html">Insights</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <main id="content">
+    <section class="hero" id="main-content">
         <!-- Decorative hero SVGs removed for clearer background image -->
         
         <div class="hero-content" style="position: relative; z-index: 1;">
-            <h1 class="hero-title">Infrastructure Excellence. Delivered with Purpose.</h1>
-            <p class="hero-subtitle">Kuhlula Legacy is Africa's leading 100% Black-owned integrated infrastructure solutions provider. We deliver world-class logistics, maintenance, and construction services across South Africa and the SADC region with uncompromising quality and reliability.</p>
+            <h1 class="hero-title">Transport, Supply and Project Support.</h1>
+            <p class="hero-subtitle">Kuhlula Legacy delivers reliable road freight, goods supply, shuttle services, plant hire and construction projects across South Africa.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Explore Our Excellence</button>
+                <a class="btn btn-primary" href="#services">Explore Our Services</a>
                 <a href="contact.html" class="btn btn-secondary">Request a Consultation</a>
             </div>
         </div>
@@ -66,99 +68,79 @@
     <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
-                <h2>Three Powerful Service Lines. One Extraordinary Partner.</h2>
-                <p>We blend decades of operational excellence with cutting-edge technology and a commitment to African excellence. Our integrated solutions power industries, governments, and enterprises across the continent.</p>
+                <h2>Five Practical Services. One Trusted Partner.</h2>
+                <p>From moving freight and supplying essential goods to passenger transport, equipment hire and construction, our services support businesses and projects across South Africa.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"></div>
-                    <h3>Integrated Logistics & Fleet Operations</h3>
-                    <p>State-of-the-art fleet management with real-time GPS tracking, bulk transport capabilities up to 30+ metric tons per vehicle, and comprehensive supply chain solutions. We specialize in serving mining, construction, industrial, and commercial sectors with precision logistics across South Africa, Botswana, Mozambique, Namibia, and beyond.</p>
+                    <h3>Road Freight Transportation</h3>
+                    <p>Road freight services for business, industrial and construction cargo, with transport arrangements suited to each delivery requirement.</p>
                     <a href="business-lines.html" class="card-link">Discover More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"></div>
-                    <h3>Professional Facility Management & Maintenance</h3>
-                    <p>Comprehensive facility management for corporate offices, medical institutions, industrial complexes, residential estates, and government facilities. We deliver scheduled preventative maintenance, deep cleaning, post-construction services, and emergency response with meticulous attention to detail and 24/7 availability.</p>
+                    <h3>Supply and Delivery of General Goods</h3>
+                    <p>Supply and delivery of general goods, detergents, fuels, oil and gas for business and project needs.</p>
                     <a href="business-lines.html" class="card-link">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"></div>
-                    <h3>Civil Construction & Infrastructure Development</h3>
-                    <p>Large-scale infrastructure development, civil engineering projects, site preparation, and specialized construction services. We operate modern equipment including TLBs, graders, excavators, and specialized machinery. Full OHS compliance, environmental responsibility, and project management excellence define our construction division.</p>
+                    <h3>Shuttle Services</h3>
+                    <p>Passenger transport including airport-to-hotel transfers, staff transportation and other planned shuttle services.</p>
+                    <a href="business-lines.html" class="card-link">Explore Services</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Plant Hire</h3>
+                    <p>Hire of earthmoving and construction equipment, including TLBs, loaders and graders, to support project work.</p>
+                    <a href="business-lines.html" class="card-link">Explore Services</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Construction Projects</h3>
+                    <p>Construction and infrastructure project delivery, including site preparation and civil works.</p>
                     <a href="business-lines.html" class="card-link">Explore Services</a>
                 </div>
             </div>
-            <p class="services-closing">At Kuhlula Legacy, we don't just execute services”we build partnerships. Every project is delivered with precision, accountability, and a commitment to transforming African infrastructure into a global benchmark for excellence.</p>
+            <p class="services-closing">At Kuhlula Legacy, we build practical partnerships and deliver every service with care, accountability and a commitment to dependable results.</p>
         </div>
     </section>
 
     <!-- Highlights Section -->
     <section class="highlights-section">
         <div class="container">
-            <h2>Why Africa's Leading Companies Choose Kuhlula Legacy</h2>
+            <h2>One Partner for Five Essential Services</h2>
             <div class="highlights-grid">
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Real-Time Fleet Intelligence</h4>
-                    <p>Advanced GPS tracking, predictive maintenance, and live supply chain visibility. Our proprietary logistics platform provides complete operational transparency and optimization across all assets.</p>
+                    <div class="highlight-number">01</div>
+                    <h4>Road Freight</h4>
+                    <p>Road transportation for business, industrial and project cargo.</p>
                 </div>
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Zero-Compromise Safety Culture</h4>
-                    <p>Industry-leading OHS standards with zero tolerance for unsafe practices. Every team member receives continuous safety training and operates under rigorous compliance protocols exceeding regulatory requirements.</p>
+                    <div class="highlight-number">02</div>
+                    <h4>Goods Supply</h4>
+                    <p>Supply and delivery of general goods, detergents, fuels, oil and gas.</p>
                 </div>
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Integrated Multi-Service Excellence</h4>
-                    <p>Single-point coordination across logistics, maintenance, and construction ensures seamless project delivery, reduced inefficiencies, and comprehensive solutions for complex operational challenges.</p>
+                    <div class="highlight-number">03</div>
+                    <h4>Shuttle Services</h4>
+                    <p>Airport-to-hotel transfers, staff transportation and other planned trips.</p>
                 </div>
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Pan-SADC Regional Network</h4>
-                    <p>Established operations across South Africa with expanding presence in Botswana, Mozambique, Namibia, and beyond. Our regional infrastructure enables truly continental service delivery.</p>
+                    <div class="highlight-number">04</div>
+                    <h4>Plant Hire</h4>
+                    <p>Equipment hire to support construction and infrastructure work.</p>
                 </div>
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Proven Excellence. Quantified.</h4>
-                    <p>99% on-time delivery rate, 250+ successful projects, 100+ enterprise clients, and a 98% client retention rate. These aren't promisesâ€”they're our daily performance standard.</p>
+                    <div class="highlight-number">05</div>
+                    <h4>Construction Projects</h4>
+                    <p>Construction, infrastructure and civil works project support.</p>
                 </div>
                 <div class="highlight-item">
-                    <div class="highlight-number">logistics</div>
-                    <h4>Authentic Black Economic Empowerment</h4>
-                    <p>100% Black-owned with demonstrated B-BBEE level 1 scorecard. We drive job creation, skills development, and sustainable economic transformation across Africa.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">+ Fleet Vehicles & Equipment</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">+ Projects Delivered</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">+ Enterprise Clients</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">+ Skilled Professionals & Partners</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">% On-Time Delivery Rate</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="1">0</h3>
-                    <p class="stat-label">% Client Retention Rate</p>
+                    <div class="highlight-number">KL</div>
+                    <h4>One Point of Contact</h4>
+                    <p>Discuss one service or a combination of services with our team.</p>
                 </div>
             </div>
         </div>
@@ -167,8 +149,8 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Experience Premium Infrastructure Solutions?</h2>
-            <p>Join successful projects and enterprise clients who trust Kuhlula Legacy to deliver excellence. Let's transform your infrastructure challenges into competitive advantages. Our team is ready for your consultation, whether you need logistics optimization, facility management excellence, or construction expertise.</p>
+            <h2>Let’s Discuss Your Project</h2>
+            <p>Tell us what you need for freight, supply, passenger transport, equipment hire or construction.</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary">Schedule Your Consultation</a>
                 <a href="business-lines.html" class="btn btn-secondary">Explore Our Services</a>
@@ -176,18 +158,15 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
                     <h4>Kuhlula Legacy</h4>
-                    <p>Africa's premier 100% Black-owned integrated infrastructure solutions provider. We deliver world-class logistics, maintenance, and construction services with uncompromising quality, safety, and reliability across South Africa and the SADC region.</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/company/kuhlula-legacy" title="LinkedIn" target="_blank">in</a>
-                        <a href="https://facebook.com/kuhlulalegacy" title="Facebook" target="_blank">f</a>
-                        <a href="https://twitter.com/kuhlulalegacy" title="Twitter" target="_blank">🕊</a>
-                    </div>
+                    <p>Kuhlula Legacy provides road freight, goods supply and delivery, shuttle services, plant hire and construction projects across South Africa.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Navigation</h4>
@@ -195,7 +174,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="business-lines.html">Our Services</a></li>
-                        <li><a href="insights.html">Market Insights</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -205,20 +184,9 @@
                     <p><strong>Phone:</strong> <a href="tel:+27813407183">+27 (0)81 340 7183</a></p>
                     <p><strong>Location:</strong> Kempton Park, Gauteng, South Africa</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Our Credentials</h4>
-                    <ul>
-                        <li>100% Black-Owned Enterprise</li>
-                        <li>B-BBEE Level 1</li>
-                        <li>OHS Compliant</li>
-                        <li>CIPC Registered</li>
-                        <li>Fully Insured</li>
-                    </ul>
-                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kuhlula Legacy. All Rights Reserved. Transforming African Infrastructure.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Compliance</a></p>
+                <p>&copy; 2026 Kuhlula Legacy. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -226,4 +194,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

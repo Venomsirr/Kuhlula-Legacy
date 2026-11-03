@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta name="description" content="Request a quote for road freight, goods supply, shuttle services, plant hire or construction projects from Kuhlula Legacy.">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Quick Quote | Kuhlula Legacy">
-    <meta property="og:description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta property="og:description" content="Request a quote for road freight, goods supply, shuttle services, plant hire or construction projects from Kuhlula Legacy.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/hero-all-bg.jpeg">
     <meta property="og:site_name" content="Kuhlula Legacy">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quick Quote | Kuhlula Legacy">
-    <meta name="twitter:description" content="Request a quick quote from Kuhlula Legacy for logistics, plant hire and specialized supply chain services.">
+    <meta name="twitter:description" content="Request a quote for road freight, goods supply, shuttle services, plant hire or construction projects from Kuhlula Legacy.">
     <meta name="twitter:image" content="assets/images/hero-all-bg.jpeg">
     <meta name="theme-color" content="#000000">
     <link rel="icon" href="assets/images/logo-bg.jpeg" type="image/jpeg">
@@ -24,6 +24,7 @@
     <script src="navigation.js"></script>
 </head>
 <body>
+    <a class="skip-link" href="#content">Skip to content</a>
     <div class="loader" id="loader"><div class="loader-inner"><span class="loader-logo"></span><div class="spinner"></div></div></div>
     <header class="header" id="header">
         <script>document.write(NavigationComponent.render('quote'));</script>
@@ -35,7 +36,7 @@
             <div class="page-header-overlay"></div>
             <div class="page-header-content container">
                 <h1>Quick <span>Quote</span></h1>
-                <p>Tell us what you need and we’ll deliver a fast, tailored logistics proposal.</p>
+                <p>Tell us what you need and we’ll prepare a tailored service proposal.</p>
             </div>
         </section>
 
@@ -43,24 +44,25 @@
             <div class="container split-grid fade-up">
                 <div>
                     <span class="eyebrow">Quick Quote</span>
-                    <h2>Fast, simple and action-ready.</h2>
-                    <p>Complete the form or contact us directly on WhatsApp for urgent logistics and equipment pricing.</p>
+                    <h2>Tell us what you need.</h2>
+                    <p>Complete the form or contact us directly on WhatsApp to discuss your service requirements.</p>
                     <div class="quote-summary">
-                        <div><strong>Service</strong><span> Freight, Plant Hire, Warehousing, Supply Chain</span></div>
-                        <div><strong>Timeline</strong><span> Standard and expedited options available</span></div>
-                        <div><strong>Support</strong><span> 24/7 urgent logistics assistance</span></div>
+                        <div><strong>Services</strong><span> Freight, goods supply, shuttles, plant hire and construction</span></div>
+                        <div><strong>Timeline</strong><span> Share your preferred timing for discussion</span></div>
+                        <div><strong>Response</strong><span> Call during business hours to discuss urgent requests</span></div>
                     </div>
                     <a href="https://wa.me/27813407183?text=Hello%20Kuhlula%20Legacy%2C%20I%20need%20a%20quote." class="btn btn-primary" target="_blank" rel="noreferrer">Request via WhatsApp</a>
                 </div>
                 <form id="quoteForm" class="quote-form">
-                    <div class="form-row"><input type="text" name="name" placeholder="Name *" required></div>
-                    <div class="form-row"><input type="text" name="company" placeholder="Company"></div>
-                    <div class="form-row"><input type="email" name="email" placeholder="Email *" required></div>
-                    <div class="form-row"><input type="tel" name="phone" placeholder="Phone *" required></div>
-                    <div class="form-row"><select name="service" required><option value="">Select Service</option><option value="freight"> Freight & Logistics</option><option value="plant-hire">Plant Hire</option><option value="warehousing">Warehousing</option><option value="supply-chain">Supply Chain</option><option value="cross-border">Cross-Border Logistics</option><option value="fleet-leasing">Fleet Leasing</option></select></div>
-                    <div class="form-row"><select name="timeline" required><option value="">Estimated Delivery Timeline</option><option value="standard"> Standard (5-7 days)</option><option value="express">Express (2-3 days)</option><option value="urgent">Urgent (24 hours)</option></select></div>
-                    <div class="form-row"><textarea name="message" placeholder="Project details *" required></textarea></div>
+                    <div class="form-row"><input type="text" name="name" aria-label="Name" placeholder="Name *" autocomplete="name" required></div>
+                    <div class="form-row"><input type="text" name="company" aria-label="Company" placeholder="Company" autocomplete="organization"></div>
+                    <div class="form-row"><input type="email" name="email" aria-label="Email" placeholder="Email *" autocomplete="email" required></div>
+                    <div class="form-row"><input type="tel" name="phone" aria-label="Phone" placeholder="Phone *" autocomplete="tel" required></div>
+                    <div class="form-row"><select name="service" aria-label="Service" required><option value="">Select Service</option><option value="road-freight">Road Freight Transportation</option><option value="general-goods">Supply and Delivery of General Goods, Detergents, Fuels, Oil and Gas</option><option value="shuttle">Airport, Hotel and Staff Shuttle Services</option><option value="plant-hire">Plant Hire</option><option value="construction">Construction Projects</option></select></div>
+                    <div class="form-row"><select name="timeline" aria-label="Preferred timeline" required><option value="">Preferred Timeline</option><option value="flexible">Flexible</option><option value="within-week">Within a week</option><option value="urgent-discussion">Urgent - please discuss</option></select></div>
+                    <div class="form-row"><textarea name="message" aria-label="Project details" placeholder="Project details *" required></textarea></div>
                     <button type="submit" class="btn btn-secondary">Submit Quote Request</button>
+                    <p class="form-note">Submitting opens your email app so you can send this enquiry to our team.</p>
                 </form>
             </div>
         </section>
@@ -70,7 +72,7 @@
         <div class="container footer-grid">
             <div>
                 <h3>Kuhlula <span>Legacy</span></h3>
-                <p>Moving South Africa with integrated logistics, plant hire and supply chain services.</p>
+                <p>Road freight, goods supply, shuttle services, plant hire and construction projects.</p>
             </div>
             <div>
                 <h4>Quick Links</h4>
@@ -78,9 +80,10 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="services.html">Business Lines</a></li>
-                    <li><a href="fleet.html">Career</a></li>
-                    <li><a href="gallery.html">Insights</a></li>
+                    <li><a href="business-lines.html">Business Lines</a></li>
+                    <li><a href="fleet.html">Careers</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -88,15 +91,14 @@
                 <h4>Contact</h4>
                 <p><i data-lucide="map-pin"></i> Kempton Park, Gauteng</p>
                 <p><i data-lucide="phone"></i> +27 (81) 340 7183</p>
-                <p><i data-lucide="mail"></i> info@kuhlulalegacy.co.za</p>
+                <p><i data-lucide="mail"></i> <a href="mailto:info.kuhlulalegacy@gmail.com">info.kuhlulalegacy@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Kuhlula Legacy. All Rights Reserved. | CIPC Registered | 100% Black Owned</p>
+            <p>© 2026 Kuhlula Legacy. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

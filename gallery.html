@@ -24,6 +24,7 @@
     <script src="navigation.js"></script>
 </head>
 <body>
+    <a class="skip-link" href="#content">Skip to content</a>
     <div class="loader" id="loader"><div class="loader-inner"><span class="loader-logo"></span><div class="spinner"></div></div></div>
     <header class="header" id="header">
         <script>document.write(NavigationComponent.render('gallery'));</script>
@@ -35,56 +36,50 @@
             <div class="page-header-overlay"></div>
             <div class="page-header-content container">
                 <h1>Project <span>Gallery</span></h1>
-                <p>Visual examples of our logistics, plant hire and infrastructure support services.</p>
-            </div>
-        </section>
-
-        <section class="section section-light filter-section fade-up">
-            <div class="container">
-                <div class="filter-chips">
-                    <button class="chip active">Construction</button>
-                    <button class="chip">Mining</button>
-                    <button class="chip">Logistics</button>
-                    <button class="chip">Agriculture</button>
-                </div>
+                <p>Photos from our company profile illustrating transport, supply and construction service areas.</p>
             </div>
         </section>
 
         <section class="section gallery-section">
             <div class="container gallery-grid fade-up">
-                <article class="gallery-card"><img src="assets/images/construction-site.jpg" alt="Construction logistics site"><div><h4>Construction Logistics</h4><p>Site mobilisation and heavy plant delivery.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/mining-transport.jpg" alt="Mining transport operations"><div><h4>Mining Transport</h4><p>Reliable haulage for mining equipment and materials.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/warehouse-exterior.jpg" alt="Warehouse logistics exterior"><div><h4>Warehouse Distribution</h4><p>Precision handling for storage and cross-docking.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/dispatch-control-room.jpg" alt="Dispatch coordination centre"><div><h4>Dispatch Coordination</h4><p>Centralised control for all fleet and delivery routing.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/heavy-duty-truck.jpg" alt="Heavy duty truck fleet"><div><h4>Heavy Truck Fleet</h4><p>Premium plant hire and transportation capabilities.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/front-end-loader.jpg" alt="Front-end loader equipment"><div><h4>Front-End Loader</h4><p>Heavy-duty earthmoving and material handling.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/horse-trailer-truck.jpg" alt="Horse and trailer truck"><div><h4>Horse & Trailer</h4><p>Heavy-haul transport for oversized loads.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/water-truck.jpg" alt="Water truck for dust suppression"><div><h4>Water Truck</h4><p>Site support and dust control operations.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/tlb-equipment.jpg" alt="TLB excavator equipment"><div><h4>TLB Excavator</h4><p>Versatile 4-in-1 bucket for trenching and loading.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/mining-logistics.jfif" alt="Mining logistics operations"><div><h4>Mining Logistics</h4><p>Specialized equipment transport for mines.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/cross-border-truck.jpg" alt="Cross-border transport vehicle"><div><h4>Cross-Border Transport</h4><p>SADC and regional freight forwarding.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/fleet-convoy.png" alt="Fleet convoy operations"><div><h4>Fleet Convoy</h4><p>Coordinated multi-vehicle logistics operations.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/grader-machine.jpg" alt="Grader machine for road work"><div><h4>Grader Machine</h4><p>Road leveling and surface finishing.</p></div></article>
-                <article class="gallery-card"><img src="assets/images/night-logistics.jpg" alt="Night-time logistics operations"><div><h4>24/7 Operations</h4><p>Round-the-clock dispatch and delivery service.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/construction-site.jpg" alt="Construction site"><div><h4>Construction Projects</h4><p>Illustrative construction and site-work imagery.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/profile-freight-terminal.jpg" alt="Freight truck at a container terminal"><div><h4>Road Freight</h4><p>Company profile photo illustrating commercial freight transport.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/profile-warehouse-supply.jpg" alt="Warehouse worker checking inventory on a tablet"><div><h4>Warehouse Supply</h4><p>Company profile photo illustrating warehouse and goods supply activity.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/profile-goods-delivery.jpg" alt="Workers handing over a packed delivery"><div><h4>Goods Delivery</h4><p>Company profile photo illustrating a delivery handover.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/profile-construction-planning.jpg" alt="Construction professional reviewing project plans"><div><h4>Construction Planning</h4><p>Company profile photo illustrating project planning.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/profile-commercial-buildings.jpg" alt="Modern commercial buildings viewed from below"><div><h4>Built Environment</h4><p>Company profile image highlighting the built environment.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/mining-transport.jpg" alt="Truck transporting industrial equipment"><div><h4>Road Freight</h4><p>Road transportation for business and project cargo.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/warehouse-exterior.jpg" alt="Warehouse exterior"><div><h4>Goods Supply</h4><p>Supply and delivery of general goods and project supplies.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/dispatch-control-room.jpg" alt="Transport dispatch control room"><div><h4>Transport Coordination</h4><p>Planning and coordination for transport requirements.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/heavy-duty-truck.jpg" alt="Heavy-duty truck"><div><h4>Road Freight</h4><p>Transport solutions for commercial and project cargo.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/front-end-loader.jpg" alt="Front-end loader"><div><h4>Plant Hire</h4><p>Equipment hire to support construction work.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/horse-trailer-truck.jpg" alt="Horse and trailer truck"><div><h4>Road Freight</h4><p>Road transport for suitable cargo requirements.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/water-truck.jpg" alt="Water truck"><div><h4>Project Support</h4><p>Equipment and transport support for site work.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/tlb-equipment.jpg" alt="TLB excavator"><div><h4>Plant Hire</h4><p>Earthmoving equipment for project requirements.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/mining-logistics.jfif" alt="Industrial logistics"><div><h4>Road Freight</h4><p>Transport for industrial and project cargo.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/cross-border-truck.jpg" alt="Truck on a road"><div><h4>Road Freight</h4><p>Discuss route, location and delivery needs with our team.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/fleet-convoy.png" alt="Truck convoy"><div><h4>Road Freight</h4><p>Transport arrangements can be discussed for your cargo.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/grader-machine.jpg" alt="Grader machine"><div><h4>Construction Projects</h4><p>Road and site preparation project support.</p></div></article>
+                <article class="gallery-card"><img src="assets/images/night-logistics.jpg" alt="Truck at night"><div><h4>Road Freight</h4><p>Illustrative imagery of commercial transport.</p></div></article>
             </div>
         </section>
 
         <section class="section showcase-section fade-up">
             <div class="container split-grid">
                 <div>
-                    <span class="eyebrow">Operational Excellence</span>
-                    <h2>Real-time logistics powered by precision and trust.</h2>
-                    <p>From dispatch to delivery, every move is tracked, coordinated and optimized. We deliver what we promise, on time, every time.</p>
+                    <span class="eyebrow">Our Service Approach</span>
+                    <h2>Practical support for your transport and project needs.</h2>
+                    <p>Tell us what you need moved, supplied, hired or built. Our team will discuss the scope and suitable next steps with you.</p>
                     <div class="pulse-grid">
-                        <div class="pulse-card"><h4>Real-Time Tracking</h4><p>GPS-enabled fleet visibility for complete supply chain control.</p></div>
-                        <div class="pulse-card"><h4>24/7 Response</h4><p>Emergency support and rapid deployment across all regions.</p></div>
+                        <div class="pulse-card"><h4>Five Service Lines</h4><p>Road freight, goods supply, shuttle services, plant hire and construction projects.</p></div>
+                        <div class="pulse-card"><h4>Discuss Your Requirements</h4><p>Contact us to discuss location, timing and service availability.</p></div>
                     </div>
                 </div>
                 <div class="showcase-visual">
                     <div class="neon-ring"></div>
                     <div class="showcase-copy">
-                        <h3>Operations that deliver.</h3>
-                        <p>Every route optimized, every deadline met, every load tracked. That's the Kuhlula Legacy difference.</p>
+                        <h3>One point of contact.</h3>
+                        <p>Discuss one service or a combination of services with our team.</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +90,7 @@
         <div class="container footer-grid">
             <div>
                 <h3>Kuhlula <span>Legacy</span></h3>
-                <p>Moving South Africa with integrated logistics, plant hire and supply chain services.</p>
+                <p>Road freight, goods supply, shuttle services, plant hire and construction projects.</p>
             </div>
             <div>
                 <h4>Quick Links</h4>
@@ -103,9 +98,10 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="services.html">Business Lines</a></li>
-                    <li><a href="fleet.html">Career</a></li>
-                    <li><a href="gallery.html">Insights</a></li>
+                    <li><a href="business-lines.html">Business Lines</a></li>
+                    <li><a href="fleet.html">Careers</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -113,15 +109,14 @@
                 <h4>Contact</h4>
                 <p><i data-lucide="map-pin"></i> Kempton Park, Gauteng</p>
                 <p><i data-lucide="phone"></i> +27 (81) 340 7183</p>
-                <p><i data-lucide="mail"></i> info@kuhlulalegacy.co.za</p>
+                <p><i data-lucide="mail"></i> <a href="mailto:info.kuhlulalegacy@gmail.com">info.kuhlulalegacy@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Kuhlula Legacy. All Rights Reserved. | CIPC Registered | 100% Black Owned</p>
+            <p>© 2026 Kuhlula Legacy. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

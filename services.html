@@ -11,27 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
                 <img src="assets/images/logo-bg.jpeg" alt="Kuhlula Legacy logo" class="site-logo">
-                <h1>Kuhlula Legacy</h1>
+                <span class="logo-name">Kuhlula Legacy</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="business-lines.html">Business Lines</a></li>
-                <li><a href="insights.html">Insights</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle theme">Light</button>
             <a href="contact.html" class="quote-btn">Contact Us</a>
-            <div class="hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
@@ -41,16 +42,17 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="business-lines.html">Business Lines</a></li>
-            <li><a href="insights.html">Insights</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <main id="content">
+    <section class="page-header" id="main-content">
         <div class="page-header-content">
             <h1>Our Business Lines</h1>
-            <p>Comprehensive infrastructure solutions across three core sectors</p>
+            <p>Five practical service lines supporting transport, supply, mobility and development projects.</p>
         </div>
     </section>
 
@@ -60,46 +62,64 @@
             <!-- Logistics -->
             <div class="business-line-card">
                 <div class="line-content">
-                    <h3>Logistics & Freight Services</h3>
-                    <p class="line-intro">End-to-end freight solutions for every industry</p>
-                    <h4>Services Offered:</h4>
+                    <h3>Road Freight Transportation</h3>
+                    <p class="line-intro">Reliable road transport for commercial and project cargo.</p>
+                    <h4>Freight Services:</h4>
                     <ul>
-                        <li>Bulk freight transportation across South Africa</li>
-                        <li>Construction & mining materials delivery</li>
-                        <li>Agricultural and industrial goods transport</li>
-                        <li>Fleet leasing and contract logistics</li>
-                        <li>Fuel transport (future expansion)</li>
-                        <li>GPS-enabled fleet tracking and optimization</li>
-                        <li>Cross-border SADC logistics coordination</li>
+                        <li>Road freight transportation</li>
+                        <li>Delivery of construction and industrial cargo</li>
+                        <li>Domestic transport solutions tailored to each load</li>
                     </ul>
                 </div>
                 <div class="line-image">
-                    <img src="assets/images/Logistics & Freight Services Image.jfif" alt="Logistics & Freight Services" loading="lazy">
+                    <img src="assets/images/profile-freight-terminal.jpg" alt="Freight truck in a container terminal" loading="lazy">
                 </div>
             </div>
 
-            <!-- Maintenance -->
             <div class="business-line-card">
                 <div class="line-image">
-                    <img src="assets/images/Residential & Commercial Maintenance.jpg" alt="Residential & Commercial Maintenance" loading="lazy">
+                    <img src="assets/images/profile-goods-delivery.jpg" alt="Workers handing over a packed delivery" loading="lazy">
                 </div>
                 <div class="line-content">
-                    <h3>Residential & Commercial Maintenance</h3
-                    <p class="line-intro">Professional facility management and upkeep</p>
-                    <h4>Sectors Served:</h4>
+                    <h3>Supply and Delivery of General Goods</h3>
+                    <p class="line-intro">Dependable sourcing, supply and delivery for essential goods and operational needs.</p>
+                    <h4>Goods Supplied:</h4>
                     <ul>
-                        <li>Residential estates and complexes</li>
-                        <li>Office buildings and corporate facilities</li>
-                        <li>Hospitals and educational institutions</li>
-                        <li>Construction and mining sites</li>
-                        <li>Industrial facilities and warehouses</li>
+                        <li>General goods and detergents</li>
+                        <li>Fuels, oil and gas</li>
+                        <li>Delivery to business and project locations</li>
                     </ul>
-                    <h4>Services Include:</h4>
+                </div>
+            </div>
+
+            <div class="business-line-card">
+                <div class="line-content">
+                    <h3>Shuttle Services</h3>
+                    <p class="line-intro">Convenient passenger transport for visitors, teams and staff.</p>
+                    <h4>Transport Options:</h4>
                     <ul>
-                        <li>Deep cleaning and sanitization</li>
-                        <li>Post-construction cleaning</li>
-                        <li>Waste management solutions</li>
-                        <li>Scheduled maintenance contracts</li>
+                        <li>Airport-to-hotel transfers</li>
+                        <li>Staff transportation</li>
+                        <li>Shuttle services for other planned transport needs</li>
+                    </ul>
+                </div>
+                <div class="line-image">
+                    <img src="assets/images/shuttle-passengers.png" alt="Passengers boarding shuttle minibuses in South Africa" loading="lazy">
+                </div>
+            </div>
+
+            <div class="business-line-card">
+                <div class="line-image">
+                    <img src="assets/images/front-end-loader.jpg" alt="Heavy equipment available for plant hire" loading="lazy">
+                </div>
+                <div class="line-content">
+                    <h3>Plant Hire</h3>
+                    <p class="line-intro">Heavy equipment hire to support construction and infrastructure work.</p>
+                    <h4>Available Equipment:</h4>
+                    <ul>
+                        <li>TLBs and front-end loaders</li>
+                        <li>Graders and other earthmoving equipment</li>
+                        <li>Equipment hire for projects of varying scale</li>
                     </ul>
                 </div>
             </div>
@@ -107,22 +127,18 @@
             <!-- Construction -->
             <div class="business-line-card">
                 <div class="line-content">
-                    <h3>Construction & Infrastructure Development</h3>
-                    <p class="line-intro">Building projects with precision and compliance</p>
-                    <h4>Our Capabilities:</h4>
+                    <h3>Construction Projects</h3>
+                    <p class="line-intro">Practical project delivery for civil works and infrastructure development.</p>
+                    <h4>Project Capabilities:</h4>
                     <ul>
-                        <li>Building construction (residential & commercial)</li>
-                        <li>Roadworks & civil engineering support</li>
-                        <li>Renovations & structural modifications</li>
-                        <li>Energy-related installations (solar support)</li>
+                        <li>Construction and infrastructure projects</li>
+                        <li>Roadworks and civil engineering support</li>
                         <li>Site preparation and project execution</li>
-                        <li>Full OHS-compliant operations</li>
+                        <li>Safety-focused project operations</li>
                     </ul>
-                    <h4>Equipment & Resources:</h4>
-                    <p>Access to modern earthmoving equipment including TLBs, graders, excavators, and specialized machinery for all project scales.</p>
                 </div>
                 <div class="line-image">
-                    <img src="assets/images/Construction & Infrastructure Development.jpeg" alt="Construction & Infrastructure Development" loading="lazy">
+                    <img src="assets/images/profile-construction-planning.jpg" alt="Construction professional reviewing project plans" loading="lazy">
                 </div>
             </div>
         </div>
@@ -136,22 +152,22 @@
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h4>Integrated Solutions</h4>
-                    <p>All three services under one brand for seamless coordination and cost efficiency</p>
+                    <p>Discuss one service or a combination of services with our team.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
-                    <h4>OHS Compliance</h4>
-                    <p>Rigorous safety standards across all operations and projects</p>
+                    <h4>Safety-Conscious Planning</h4>
+                    <p>Safety is considered when planning transport and project requirements.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
-                    <h4>Modern Fleet</h4>
-                    <p>Well-maintained vehicles and equipment ready for any challenge</p>
+                    <h4>Equipment Requirements</h4>
+                    <p>Discuss vehicle and equipment availability with our team.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h4>Scalable Operations</h4>
-                    <p>From small projects to large-scale operations across SADC</p>
+                    <p>Discuss the scope, schedule and location of your project with our team.</p>
                 </div>
             </div>
         </div>
@@ -163,11 +179,13 @@
             <h2>Ready to Get Started?</h2>
             <p>Contact us for a consultation on your specific needs</p>
             <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="openQuoteModal()">Request Quote</button>
+                <a href="quote.html" class="btn btn-primary">Request Quote</a>
                 <a href="contact.html" class="btn btn-outline">Contact Us</a>
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -175,12 +193,7 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <h4>Kuhlula Legacy</h4>
-                    <p>Integrated infrastructure solutions provider delivering reliable, scalable, and compliant services across South Africa and the SADC region.</p>
-                    <div class="social-links">
-                        <a href="#" title="LinkedIn">in</a>
-                        <a href="#" title="Facebook">f</a>
-                        <a href="#" title="Twitter">X</a>
-                    </div>
+                    <p>Road freight, goods supply, shuttle services, plant hire and construction projects.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -193,62 +206,16 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><strong>Email:</strong> info@kuhlulalegacy.co.za</p>
+                    <p><strong>Email:</strong> <a href="mailto:info.kuhlulalegacy@gmail.com">info.kuhlulalegacy@gmail.com</a></p>
                     <p><strong>Phone:</strong> +27 (0)81 340 7183</p>
                     <p><strong>Location:</strong> Kempton Park, Gauteng</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Certifications</h4>
-                    <ul>
-                        <li>100% Black-Owned Enterprise</li>
-                        <li>OHS Compliant</li>
-                        <li>B-BBEE Accredited</li>
-                    </ul>
-                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kuhlula Legacy. All Rights Reserved.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2026 Kuhlula Legacy. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Quote Modal -->
-    <div id="quoteModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeQuoteModal()">&times;</span>
-            <h2>Get a Quote</h2>
-            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Service Interest *</label>
-                    <select id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="logistics">Logistics & Freight</option>
-                        <option value="maintenance">Maintenance Services</option>
-                        <option value="construction">Construction & Infrastructure</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Quote Request</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
